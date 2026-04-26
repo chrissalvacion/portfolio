@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Christian Rae Lopez-Salvacion — Full Stack Developer" />
+    <title>Christian Rae Lopez-Salvacion | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ── NAV ───────────────────────────────────────── -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#hero" class="nav__logo">crls<span class="accent">.</span></a>
+        <ul class="nav__list" id="navList">
+          <li><a href="#about"    class="nav__link">About</a></li>
+          <li><a href="#skills"   class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#contact"  class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ── HERO ──────────────────────────────────────── -->
+      <section class="hero section" id="hero">
+        <div class="container hero__content">
+          <p class="hero__greeting">Hi, I'm</p>
+          <h1 class="hero__name">Christian Rae<br /><span class="accent">Lopez-Salvacion</span></h1>
+          <p class="hero__role"><span class="hero__role-prefix">// </span>IT Instructor / Full Stack Developer</p>
+          <p class="hero__bio">
+            If it can be automated, optimized, or built — I’m your guy.
+          </p>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#contact"  class="btn btn--ghost">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero__scroll-indicator" aria-hidden="true">
+          <span></span>
+        </div>
+      </section>
+
+      <!-- ── ABOUT ─────────────────────────────────────── -->
+      <section class="about section" id="about">
+        <div class="container">
+          <h2 class="section__title">About <span class="accent">Me</span></h2>
+          <div class="about__grid">
+            <div class="about__image-wrap">
+              <img src="https://avatars.githubusercontent.com/u/115869327?v=4" alt="Christian Rae Lopez-Salvacion" class="about__avatar" />
+            </div>
+            <div class="about__text">
+              <p>
+               I’m a developer and digital solutions builder who enjoys solving real-world problems 
+               through technology. My focus goes beyond just writing code — I design systems that 
+               improve efficiency, automate processes, and drive measurable results.
+              </p>
+              <p>
+                When I'm not coding, you'll find me exploring new technologies, contributing to
+                open-source projects, or leveling up my problem-solving skills.
+
+                Over time, I’ve worked on a variety of projects including:
+              </p>
+              <ul class="about__facts">
+                <li><span class="accent">→</span> Custom system development</li>
+                <li><span class="accent">→</span> Workflow automation</li>
+                <li><span class="accent">→</span> Funnel design and optimization</li>
+                <li><span class="accent">→</span> Digital consulting for startups and small businesses</li>
+              </ul>
+              <p>I continuously explore new tools, frameworks, and technologies to stay ahead and deliver modern solutions.</p>
+              <a href="#contact" class="btn btn--primary">Let's Talk</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SKILLS ────────────────────────────────────── -->
+      <section class="skills section" id="skills">
+        <div class="container">
+          <h2 class="section__title">Tech <span class="accent">Skills</span></h2>
+          <div class="skills__grid">
+
+            <div class="skill-card">
+              <h3 class="skill-card__title">Front End</h3>
+              <ul class="skill-card__list">
+                <li>HTML5 &amp; CSS3</li>
+                <li>JavaScript (ES2022+)</li>
+                <li>TypeScript</li>
+                <li>React &amp; Next.js</li>
+                <li>Vue.js</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3 class="skill-card__title">Back End</h3>
+              <ul class="skill-card__list">
+                <li>Node.js &amp; Express</li>
+                <li>Laravel</li>
+                <!-- <li>Python &amp; Django</li> -->
+                <!-- <li>REST &amp; GraphQL APIs</li> -->
+                <li>PostgreSQL &amp; MySQL</li>
+                <li>MongoDB</li>
+                <!-- <li>Redis</li> -->
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3 class="skill-card__title">Tools &amp; DevOps</h3>
+              <ul class="skill-card__list">
+                <li>Git &amp; GitHub</li>
+                <!-- <li>Docker &amp; Docker Compose</li>
+                <li>CI/CD (GitHub Actions)</li> -->
+                <li>Bash</li>
+                <li>Adobe XD</li>
+                <li>Vercel</li>
+              </ul>
+            </div>
+
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- ── PROJECTS ───────────────────────────────────── -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <h2 class="section__title">Featured <span class="accent">Projects</span></h2>
+
+          <h2 class="section__subtitle">Web Apps / Systems</h2>
+          <br/>
+          <div class="projects__grid">
+
+            <article class="project-card">
+              <div class="project-card__header">
+                <span class="project-card__number">01</span>
+                <div class="project-card__links">
+                  <a href="https://github.com/chrissalvacion/subaycentral" class="project-card__link" aria-label="Source code" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                  <a href="https://subaycentral.vercel.app" class="project-card__link" aria-label="Live demo" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">SubayCentral</h3>
+              <p class="project-card__desc">
+                A full-stack web application featuring real-time data updates, user authentication,
+                and a responsive dashboard interface. This project is used to monitor internhip of students.
+              </p>
+              <ul class="project-card__tags">
+                <li>React</li><li>Node.js</li><li>PostgreSQL</li><li>Vercel</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__header">
+                <span class="project-card__number">02</span>
+                <div class="project-card__links">
+                  <a href="https://github.com/chrissalvacion/emeraldstms" class="project-card__link" aria-label="Source code" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                  <a href="#" class="project-card__link" aria-label="Live demo" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">Tutorial Management Information System</h3>
+              <p class="project-card__desc">
+                A RESTful API service with comprehensive docs, rate limiting, and caching — built
+                for speed and scalability. This project is used to monitor tutorial sessions of students. 
+              </p>
+              <ul class="project-card__tags">
+                <li>Laravel</li><li>Vue.js</li><li>MySQL</li><li>PHP</li><li>TypeScript</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__header">
+                <span class="project-card__number">03</span>
+                <div class="project-card__links">
+                  <a href="https://github.com/chrissalvacion/iqualify-ccs.app" class="project-card__link" aria-label="Source code" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                  <a href="#" class="project-card__link" aria-label="Live demo" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">iQualify</h3>
+              <p class="project-card__desc">
+                A web-based qualifying exam system that allows students to take their qualifying exams online, while providing administrators with tools to manage exams, monitor progress, and generate reports.
+              </p>
+              <ul class="project-card__tags">
+                <li>Laravel</li><li>Blade</li><li>MySQL</li><li>PHP</li>
+              </ul>
+            </article>
+
+          </div>
+
+          <br/>
+          <!-- <h2 class="section__subtitle">Automations</h2>
+          <br/>
+          <div class="projects__grid">
+
+            <article class="project-card">
+              <div class="project-card__header">
+                <span class="project-card__number">01</span>
+                <div class="project-card__links">
+                  <a href="#" class="project-card__link" aria-label="Source code" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                  <a href="#" class="project-card__link" aria-label="Live demo" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">Project Alpha</h3>
+              <p class="project-card__desc">
+                A full-stack web application featuring real-time data updates, user authentication,
+                and a responsive dashboard interface.
+              </p>
+              <ul class="project-card__tags">
+                <li>React</li><li>Node.js</li><li>PostgreSQL</li><li>Socket.io</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__header">
+                <span class="project-card__number">02</span>
+                <div class="project-card__links">
+                  <a href="#" class="project-card__link" aria-label="Source code" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                  <a href="#" class="project-card__link" aria-label="Live demo" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">Project Beta</h3>
+              <p class="project-card__desc">
+                A RESTful API service with comprehensive docs, rate limiting, and caching — built
+                for speed and scalability.
+              </p>
+              <ul class="project-card__tags">
+                <li>Python</li><li>Django</li><li>Redis</li><li>Docker</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__header">
+                <span class="project-card__number">03</span>
+                <div class="project-card__links">
+                  <a href="#" class="project-card__link" aria-label="Source code" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                  <a href="#" class="project-card__link" aria-label="Live demo" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">Project Gamma</h3>
+              <p class="project-card__desc">
+                An e-commerce platform with product management, cart system, and integrated payment
+                processing via Stripe.
+              </p>
+              <ul class="project-card__tags">
+                <li>Next.js</li><li>TypeScript</li><li>MongoDB</li><li>Stripe</li>
+              </ul>
+            </article>
+
+          </div> -->
+          <h2 class="section__subtitle">Funnel Designs</h2>
+          <br/>
+          <div class="projects__grid">
+
+            <article class="project-card">
+              <div class="project-card__header">
+                <span class="project-card__number">01</span>
+                <div class="project-card__links">
+                  <a href="https://github.com/chrissalvacion/esuncreationsdl" class="project-card__link" aria-label="Source code" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                  <a href="https://chrissalvacion.github.io/esuncreationsdl/" class="project-card__link" aria-label="Live demo" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">Esuncreations Digital Lab</h3>
+              <p class="project-card__desc">
+                A high-converting landing page and digital funnel for EsunCreations Digital Lab — a studio that designs and develops modern, 
+                user-centered websites and digital platforms for individuals, startups, and institutions.
+              </p>
+              <ul class="project-card__tags">
+                <li>HTML</li><li>JavaScript</li><li>CSS</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__header">
+                <span class="project-card__number">02</span>
+                <div class="project-card__links">
+                  <a href="#" class="project-card__link" aria-label="Source code" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                  <a href="#" class="project-card__link" aria-label="Live demo" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">Project Beta</h3>
+              <p class="project-card__desc">
+                A RESTful API service with comprehensive docs, rate limiting, and caching — built
+                for speed and scalability.
+              </p>
+              <ul class="project-card__tags">
+                <li>Python</li><li>Django</li><li>Redis</li><li>Docker</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__header">
+                <span class="project-card__number">03</span>
+                <div class="project-card__links">
+                  <a href="#" class="project-card__link" aria-label="Source code" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  </a>
+                  <a href="#" class="project-card__link" aria-label="Live demo" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-card__title">Project Gamma</h3>
+              <p class="project-card__desc">
+                An e-commerce platform with product management, cart system, and integrated payment
+                processing via Stripe.
+              </p>
+              <ul class="project-card__tags">
+                <li>Next.js</li><li>TypeScript</li><li>MongoDB</li><li>Stripe</li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CONTACT ────────────────────────────────────── -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <h2 class="section__title">Get In <span class="accent">Touch</span></h2>
+          <p class="contact__sub">
+            Have a project in mind or just want to say hello? My inbox is always open.
+          </p>
+            <form class="contact__form" id="contactForm" novalidate>
+            <input type="hidden" name="access_key" value="757e27d1-923a-45df-9bf2-37fece3e8232">
+            <input type="hidden" name="subject" value="New Portfolio Contact Message">
+            <input type="hidden" name="from_name" value="Portfolio Contact Form">
+            <div class="form__row">
+              <div class="form__group">
+              <label for="name" class="form__label">Name</label>
+              <input type="text" id="name" name="name" class="form__input" placeholder="John Doe" required />
+              <span class="form__error" id="nameError"></span>
+              </div>
+              <div class="form__group">
+              <label for="email" class="form__label">Email</label>
+              <input type="email" id="email" name="email" class="form__input" placeholder="john@example.com" required />
+              <span class="form__error" id="emailError"></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="subject" class="form__label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form__input" placeholder="Project Inquiry" required />
+              <span class="form__error" id="subjectError"></span>
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Message</label>
+              <textarea id="message" name="message" class="form__textarea" placeholder="Tell me about your project..." rows="5" required></textarea>
+              <span class="form__error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              Send Message
+            </button>
+            <p class="form__status" id="formStatus"></p>
+            </form>
+
+
+
+          <div class="contact__links">
+            <a href="mailto:christianraelopezs@gmail.com" class="contact__link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+            <a href="https://github.com/chrissalvacion" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/christiansalvacion" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── FOOTER ─────────────────────────────────────── -->
+    <footer class="footer">
+      <div class="container">
+        <p>Designed &amp; built by <span class="accent">Christian Rae Lopez-Salvacion</span></p>
+        <p class="footer__copy">© <span id="year"></span> All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
